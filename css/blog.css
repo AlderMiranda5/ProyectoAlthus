@@ -1,0 +1,120 @@
+body{
+    background: #282927;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+}
+
+main .caja{
+    padding: 4rem 9rem;
+    width: 100%;
+}
+
+main .caja .caja-letra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.caja-letra .tema a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.caja-letra .tema a h3{
+    font-size: 3.3rem;
+    letter-spacing: -4.5px;
+}
+
+.caja-letra .fecha p{
+    color: #6612E2;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+}
+
+.caja-letra .concepto p{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.caja-letra .enlace-leer a{
+    color: #6612E2;
+    text-decoration: underline;
+}
+
+
+main .caja .caja-imagen{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.main .caja .caja-imagen a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.25);
+    padding: 0;
+    clip-path: inset(0px 50px 0px 50px);
+    transition: all .25s ease-in;
+}
+
+.main .caja .caja-imagen a img:hover{
+    opacity: .8;
+    transition: all .25s ease-out;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px){
+    main .caja{
+        padding: 8rem 1rem;
+    }
+    .main .caja .caja-imagen a img{
+        object-fit: cover;
+        clip-path: none;
+        transform: none;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    main .caja .caja-letra .fecha{
+        line-height: 2rem;
+    }
+    .caja-letra .fecha p{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px){
+    main .caja{
+        padding: 3rem 0rem;
+    }
+    .caja-letra .tema a h3{
+        font-size: 2.5rem;
+        letter-spacing: -3.5px;
+    }
+}
+
+@media (max-width: 450px){
+    .caja-letra .tema a h3{
+        font-size: 1.8rem;
+        letter-spacing: -2.5px;
+    }
+    
+    .caja-letra .fecha p{
+        font-size: 2rem;
+        letter-spacing: -3px;
+    }
+    .caja-letra .concepto p{
+        font-size: 1rem;
+    }
+    .caja-letra .enlace-leer a{
+        font-size: .8rem;
+    }
+}
