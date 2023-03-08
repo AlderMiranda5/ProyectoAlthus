@@ -90,6 +90,24 @@ header .menu{
     transition: all 0.4s ease;
 }
 
+@media (max-width: 768px){
+    header .toggler{
+        height: 30px;
+        width: 22px;
+        top: 58px;
+        right: 45px; 
+    }
+}
+
+@media (max-width: 575px){
+    header .toggler{
+        height: 25px;
+        width: 20px;
+        top: 50px;
+        right: 38px; 
+    }
+}
+
 @media (max-width: 400px){
     footer .text-footer p{
         font-size: 14px;

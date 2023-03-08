@@ -161,7 +161,7 @@
     font-size: 6rem;
     text-align: end;
     line-height: 7rem;
-    letter-spacing: -5px;
+    letter-spacing: -7px;
 }
 
 .titulo-services h2 span{
@@ -179,8 +179,8 @@
     letter-spacing: -2px;
 }
 
-.servicios .post-header .col-12{
-    padding: 1rem 2.5rem;
+.servicios .post-header .col-md-12{
+    padding: 2rem 2.5rem;
 }
 
 .row .estrategia::before,
@@ -246,7 +246,6 @@
 
 .comerciales .title-comerciales .col-10 h3{
     font-size: 5.2rem;
-    width: 120%;
     margin: 5rem 0 0rem 7rem;
     font-family: 'Fjalla One', sans-serif;
     line-height: 7rem;
@@ -343,6 +342,8 @@
 }
 
 .contacto .contactanos{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -420,6 +421,8 @@ input[type='email']{
 .footer .derechos-reserv{
     font-family: 'Nunito', sans-serif;
     letter-spacing: -.5px;
+    padding: 1.5rem 0 0rem 0;
+    border-top: 1px solid white;
 }
 
 .footer a{
@@ -514,7 +517,7 @@ input[type='email']{
 .menu{
     background: rgb(0, 0, 0, 0.9);
     width: 0%;
-    height: 100vh;
+    height: 150vh;
     position: fixed;
     right: 0px;
     z-index: 9998;
@@ -555,7 +558,7 @@ input[type='email']{
 }
 
 .toggler:checked ~ .menu > div > ul > li > a:hover{
-    color:#6612E2;
+    color: #6612E2;
 }
 
 /* Redes-Sociales */
@@ -621,67 +624,205 @@ input[type='email']{
 
 @media (max-width: 992px){
     .section-1 .title .texto-white h2{
-        font-size: 5.5rem;
+        font-size: 4rem;
+        letter-spacing: -5px;
     }
     .section-1 .title .texto-red h2{
-        font-size: 5.5rem;
+        font-size: 4rem;
+        letter-spacing: -5px;
+    }
+    .section-1 .title .texto-red img{
+        width: 3rem;
     }
     .section-1 .title .concept{
-        width: 70%;
+        width: 45%;
     }
     .section-1 .title .concept p{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+    }
+    .titulo-services h2{
+        font-size: 5.5rem;
+        text-align: end;
+        line-height: 5rem;
+        letter-spacing: -8px;
+    }
+    .parrafo-services p{
+        width: 90%;
+        font-size: 1.4rem;
+        line-height : 1.7rem;
+        letter-spacing: -2px;
+    }
+
+    .titulo-estrategia img,
+    .titulo-diseño img,
+    .titulo-markdigital img{
+        width: 3rem;
     }
 
     .titulo-estrategia h3,
     .titulo-diseño h3,
     .titulo-markdigital h3{
-        font-size: 5.5rem;
-    }
-    .comerciales .title-comerciales .col-10 h3{
-        font-size: 5.5rem;
-        margin: 2rem 0;
-    }
-    .comerciales .title-comerciales .col-12{
-        padding-left: 2rem !important;
+        font-size: 4.5rem;
+        letter-spacing: -5px;
+        margin-left: .4rem;
     }
 
+    .titulo-markdigital h3{
+        line-height: 6rem;
+    }
+
+    .concept-estrategia p,
+    .concept-diseño p,
+    .concept-markdigital p{
+        font-size: 1.4rem;
+        margin: 0 2rem 0 6rem;
+        font-family: 'Nunito', sans-serif;
+        line-height: 2.2rem;
+        letter-spacing: -1px;
+    }
+
+    .comerciales .title-comerciales .col-10 h3{
+        font-size: 4.5rem;
+        line-height: 7rem;
+        letter-spacing: -5px;
+    }
+    
+    .comerciales .title-comerciales .col-12{
+        padding-left: 5rem;
+    }
+    
+    .comerciales .title-comerciales .col-12 img{
+        width: 3rem;
+    }
+    
     .comerciales .title-comerciales .col-12 h3{
-        font-size: 5.5rem;
+        font-size: 4.2rem;
+        letter-spacing: -5px;
+    }
+
+    .contacto{
+        padding: 4rem 0;
+    }
+    
+    .contacto .contactanos .col-12 h3{
+        font-size: 5rem;
+        letter-spacing: -6px;
+        font-family: 'Fjalla One', sans-serif;
+    }
+    
+    .contacto .contactanos .col-12 .row{
+        border: 1px solid white;
+        padding: 1rem 0rem;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contacto .contactanos .cuadro .row{
+        width: 80%;
+        margin: 0 5rem;
+    }
+    
+    .row form{
+        display: contents;
+        width: 100%;
     }
 }
 
 @media (max-width: 768px){
+    .section-1 .title .texto-white h2{
+        font-size: 3.5rem;
+        letter-spacing: -5px;
+    }
+    .section-1 .title .texto-red h2{
+        font-size: 3.5rem;
+        letter-spacing: -5px;
+    }
+    .section-1 .title .texto-red img{
+        width: 2.5rem;
+    }
+    
     .titulo-services h2{
-        font-size: 6rem;
-        line-height: 5rem;
+        font-size: 4rem;
+        text-align: center;
+        line-height: 4rem;
+        letter-spacing: -7px;
+    }
+    .parrafo-services p{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.3rem;
+        line-height : 1.7rem;
+        letter-spacing: -2px;
+    }
+    
+    .parrafo-services p{
+        width: 90%;
+        font-size: 1.4rem;
+        line-height : 1.7rem;
+        letter-spacing: -2px;
     }
     .concept-estrategia p,
     .concept-diseño p,
     .concept-markdigital p{
         margin: 0 1rem;
     }
+
+    .concept-estrategia p,
+    .concept-diseño p,
+    .concept-markdigital p{
+        font-size: 1.4rem;
+        padding: 0 0 1rem 0;
+        line-height: 2.2rem;
+        letter-spacing: -1px;
+    }
+    .footer-services img{
+        width: 50%;
+    }
+
+    .comerciales .title-comerciales .col-10 h3{
+        font-size: 3.5rem;
+        margin: 5rem 0 0rem 2rem;
+        line-height: 7rem;
+        letter-spacing: -5px;
+    }
+    
+    .comerciales .title-comerciales .col-12{
+        padding-left: 2rem;
+    }
+    
+    .comerciales .title-comerciales .col-12 img{
+        width: 2.5rem;
+    }
+    
+    .comerciales .title-comerciales .col-12 h3{
+        font-size: 3rem;
+        letter-spacing: -3px;
+    }
     .servicios .header{
         margin: 0;
-    }
-    .titulo-estrategia h3,
-    .titulo-diseño h3,
-    .titulo-markdigital h3{
-        padding: 0 !important;
     }
     .row form label{
         padding: 1rem;
     }
     .contacto .contactanos .col-12 .row{
-        width: 70%;
+        width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-left: 5rem;
+        margin: 0 1rem;
     }
-    .row form label{
-        width: 15rem;
+    .contacto .contactanos .cuadro .row{
+        width: 80%;
+        margin: 0 5rem;
+    }
+    
+    .row form{
+        display: contents;
+        width: 100%;
     }
     .contacto .contactanos .col-12 h3{
         font-size: 5rem;
@@ -706,20 +847,136 @@ input[type='email']{
     .redes-sociales ul li a i{
         font-size: 1.5rem;
     }
+    #hero .toggler{
+        height: 30px;
+        width: 22px;
+        top: 58px;
+        right: 45px; 
+    }
 }
 
-@media (max-width: 500px){
+@media (max-width: 576px){
+    .section-1 .title .texto-white h2{
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+    }
+    .section-1 .title .texto-red h2{
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+    }
+    .section-1 .title .texto-red img{
+        width: 1.8rem;
+    }
+    .section-1 .title .concept{
+        width: 60%;
+    }
+    .section-1 .title .concept p{
+        font-size: 1rem;
+    }
     .comerciales .title-comerciales .col-10 h3{
         font-size: 4rem;
         margin: 2rem 0;
     }
 
-    .comerciales .title-comerciales .col-12 h3{
-        font-size: 4rem;
+    .titulo-services h2{
+        font-size: 3.5rem;
+        text-align: center;
+        line-height: 3.5rem;
+        letter-spacing: -5px;
     }
+    .parrafo-services p{
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 0;
+        line-height : 1.7rem;
+        letter-spacing: -2px;
+    }
+
+    .titulo-estrategia img,
+    .titulo-diseño img,
+    .titulo-markdigital img{
+        width: 2.5rem;
+    }
+
+    .titulo-estrategia h3,
+    .titulo-diseño h3,
+    .titulo-markdigital h3{
+        font-size: 3.5rem;
+        padding-top: 1rem;
+        letter-spacing: -4px;
+    }
+    .concept-estrategia p,
+    .concept-diseño p,
+    .concept-markdigital p{
+        margin: 0 .5rem;
+        font-size: 1.4rem;
+        padding: 0 0 1rem 0;
+        line-height: 2.2rem;
+        letter-spacing: -1px;
+    }
+    .titulo-markdigital h3{
+        line-height: 4rem;
+    }
+    .row .estrategia::before,
+    .row .diseño::before,
+    .row .markdigital::before{
+        height: 2px;
+        width: 80%;
+        left: 12%;
+        right: 2%;
+    }
+
+    .footer-services img{
+        width: 45%;
+    }
+
+    .comerciales .title-comerciales .col-10 h3{
+        font-size: 2.5rem;
+        margin: 5rem 0 0rem .5rem;
+        line-height: 4rem;
+        letter-spacing: -4px;
+    }
+    
+    .comerciales .title-comerciales .col-12{
+        padding-left: 2rem;
+    }
+    
+    .comerciales .title-comerciales .col-12 img{
+        width: 1.5rem;
+    }
+    
+    .comerciales .title-comerciales .col-12 h3{
+        font-size: 2.5rem;
+        letter-spacing: -3px;
+    }
+
+    .contacto .contactanos .col-12 h3{
+        font-size: 4rem;
+        letter-spacing: -5px;
+    }
+    
     .contacto .contactanos .col-12 .row{
+        padding: 1rem 0rem;
+        width: 100%;
+        margin: 0rem 5rem;
+    }
+
+    .contacto .contactanos .cuadro{
+        display: flex;
+        justify-content: center;
+    }
+
+    .row form{
+        display: contents;
+        width: 80%;
+    }
+    .row form button{
         width: 100%;
     }
+    input[type='email']{
+        width: 100%;
+    }
+
     .row form button p{
         font-size: 1.8rem;
     }
@@ -748,5 +1005,11 @@ input[type='email']{
     }
     .redes-sociales ul li a i{
         font-size: 1rem;
+    }
+    #hero .toggler{
+        height: 25px;
+        width: 20px;
+        top: 50px;
+        right: 38px; 
     }
 }
