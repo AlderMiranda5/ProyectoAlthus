@@ -1,0 +1,151 @@
+main{
+    background: url(../img/contactos_elegido.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+main .row{
+    padding: .5rem 0rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+main .row .col-12{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .titulo{
+    color: white;
+    padding-right: 2rem;
+}
+
+main .titulo-form{
+    color: white;
+}
+
+main .titulo h3, main .titulo-form h3{
+    font-size: 2.8rem;
+    font-family: "Fjalla One";
+    letter-spacing: -4px;
+}
+
+main .titulo-form h3 span{
+    color: #5819DC;
+}
+
+main .puntos ul li{
+    color: white;
+    font-size: 3rem;
+    font-family: "Fjalla One";
+    letter-spacing: -4px;
+    list-style: none;
+    margin-left: 7rem;
+}
+
+main .puntos ul li img{
+    width: 8%;
+    padding-right: .5rem;
+}
+
+main .formulario input{
+    padding: 5px 50px 5px 0px;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 80%;
+}
+
+main .formulario input[type='email']{
+    padding: 5px 50px 5px 0px !important;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 80%;
+    margin-right: 0 !important;
+}
+
+input[type='submit']{
+    border: 1px solid white;
+    transition: all .25s ease-in;
+    padding: 5px 10px 5px 10px !important;
+}
+
+input[type='submit']:hover{
+    border: 1px solid white;
+    background-color: white;
+    color: #5819DC;
+    transition: all .25s ease-out;
+}
+
+::placeholder{
+    color: white;
+    font-family: "Fjalla One";
+    font-size: 1.2rem;
+}
+
+
+/* Footer */
+footer{
+    border-top: 1px solid white;
+    background-color: #5819DC;
+}
+
+footer .text-footer{
+    padding: 27px 0;
+}
+
+footer .text-footer p{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+footer a{
+    position: fixed;
+    bottom: 120px;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    height: 38px;
+    width: 38px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    text-decoration: none;
+}
+
+footer a i{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* RESPONSIVE*/
+@media (max-width: 992px){
+    main{
+        background-image: none;
+        background-color: #232422;
+    }
+
+    main .imagen-chicagrande{
+        background-image: url(../img/medio-fondo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 6rem 0;
+    }
+}
+
+@media (max-width: 768px){
+    
+}
