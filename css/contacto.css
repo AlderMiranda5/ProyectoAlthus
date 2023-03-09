@@ -5,6 +5,7 @@ main{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
     overflow: hidden;
 }
 
@@ -135,6 +136,7 @@ footer a i{
     main{
         background-image: none;
         background-color: #232422;
+        height: auto;
     }
 
     main .imagen-chicagrande{
@@ -147,5 +149,32 @@ footer a i{
 }
 
 @media (max-width: 768px){
+    main .puntos ul li{
+        font-size: 2.5rem;
+        letter-spacing: -4px;
+        margin-left: 10rem;
+    }
     
+    main .puntos ul li img{
+        width: 8%;
+        padding-right: .5rem;
+    }
+}
+
+@media (max-width: 576px){
+    main .titulo h3, main .titulo-form h3{
+        font-size: 2.5rem;
+        letter-spacing: -4px;
+    }
+
+    main .puntos ul li{
+        font-size: 2.2rem;
+        letter-spacing: -3px;
+        margin-left: 4rem;
+    }
+    
+    main .puntos ul li img{
+        width: 8%;
+        padding-right: .5rem;
+    }
 }
