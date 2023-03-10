@@ -5,13 +5,9 @@ main{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    overflow: hidden;
 }
 
 main .row{
-    padding: .5rem 0rem;
-    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -60,7 +56,7 @@ main .formulario input{
     background-color: transparent;
     border-bottom: 1px solid white;
     color: white;
-    width: 80%;
+    width: 100%;
 }
 
 main .formulario input[type='email']{
@@ -68,7 +64,7 @@ main .formulario input[type='email']{
     background-color: transparent;
     border-bottom: 1px solid white;
     color: white;
-    width: 80%;
+    width: 100%;
     margin-right: 0 !important;
 }
 
@@ -176,5 +172,40 @@ footer a i{
     main .puntos ul li img{
         width: 8%;
         padding-right: .5rem;
+    }
+
+    main .imagen-chicagrande{
+        visibility: hidden;
+    }
+
+    main .contenedor{
+        visibility: visible;
+    }
+}
+
+@media (max-width: 400px){
+    
+    main .titulo h3, main .titulo-form h3{
+        font-size: 1.9rem;
+        letter-spacing: -2px;
+    }
+
+    main .puntos ul li{
+        font-size: 1.9rem;
+        letter-spacing: -3px;
+        margin-left: 4rem;
+    }
+
+    .formulario .form{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    ::placeholder{
+        font-size: 1.1rem;
+    }
+
+    footer .text-footer p{
+        font-size: 13px;
     }
 }

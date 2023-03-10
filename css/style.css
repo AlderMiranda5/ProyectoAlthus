@@ -994,7 +994,7 @@ input[type='email']{
     .hamburger > div::before,
     .hamburger > div::after{
         top: -7px;
-}
+    }
 
     .hamburger > div::after{
         top: 7px;
